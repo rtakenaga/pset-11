@@ -113,7 +113,7 @@ public class ProblemSet11 {
                     four.add(i);
                 }
             }
-            
+
             //check
             if (four.size() == five.size()) {
                 boolean count = true;
@@ -251,9 +251,11 @@ public class ProblemSet11 {
             int[][] mir = new int[l1 + 1][l2 + 1];
             int count = 0;
 
+
             for (int i = 0; i <= l1; i++) {
                 for (int z = 0; z <= l2; z++) {
                     if (i == 0 || z == 0) {
+
                         mir[i][z] = 0;
                     } else if (numbers.get(i - 1) == numbers.get(l2 - z)) {
                         mir[i][z] = mir[i-1][z-1] + 1;
